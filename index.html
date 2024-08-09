@@ -5,6 +5,23 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@joshpxyne">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    const style = document.createElement('style');
+    style.innerHTML = 'body { opacity: 0 !important; }';
+    const cfhide = () => document.head.appendChild(style);
+    const cfshow = () => style.remove();
+    cfhide(); setTimeout(cfshow, 2000);
+    document.addEventListener('coframe:show', cfshow);
+
+    // Coframe queue setup:
+    window.CFQ = window.CFQ || [];
+    window.CFQ.push({config: {
+        projectId: "66b6614ba07b0b4d8bdc98fb",
+    }});
+</script>
+<script async src="https://cdn.coframe.ai/cf-latest.min.js?project_id=66b6614ba07b0b4d8bdc98fb"></script>
+
   <script>window.COFRAME_PAGE_ID="6553cbb81b1ad79a43bdf6b6";</script>
   <script src='https://cdn.jsdelivr.net/npm/coframe-ai/dist/cf.min.js'></script>
   <script defer data-domain="jfp.ai" src="https://plausible.io/js/script.js"></script>  <link rel="canonical" href="http://jfp.ai">
