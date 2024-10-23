@@ -1,8 +1,6 @@
 import os
-import json
 import csv
 from anthropic import Anthropic
-import time
 
 class PromptRefinementLoop:
     def __init__(self, api_key, seed_prompt, initial_prompt="", initial_critique=""):
